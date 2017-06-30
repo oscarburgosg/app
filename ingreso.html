@@ -19,7 +19,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/borderMedia.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -40,39 +39,45 @@
         <img src="img/logo.png" alt="Logo Metro" width="100">
       </div>
 
-      <div class="boxButtons">
-          <a class="btn btn-lg btn-primary" href="ingreso.html" role="button">
-            Ingreso
-          </a>
-          <a class="btn btn-lg btn-success " href="registro.html" role="button">
-            Registro
-          </a>
-      </div>
-
       <div class="clear"></div>
 
-    <div class="container">
+    <div class="container ingreso">
       
 
       <div class="row">
 
-        <div class="social">
-          <a class="btn btn-block btn-social btn-facebook">
-            <span class="fa fa-facebook"></span> Ingresa con Facebook
-          </a>
-          <a class="btn btn-block btn-social btn-google">
-            <span class="fa fa-google"></span> Ingresa con Google
-          </a>
-        </div>
-
-
+        <form class="form-signin">
+          <div class="input">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required="" autofocus="">
+          </div>
+          <div class="input">
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+          </div>
+          <a class="btn btn-lg btn-primary btn-block" type="submit" href="landing.html">Ingresar</a>
+        </form>
       </div>  
 
-      <!--
+      <div class="row">
+        <div class="social">
+          <a class="btn btn-block btn-social btn-facebook">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a class="btn btn-block btn-social btn-google">
+            <span class="fa fa-google"></span>
+          </a>
+        </div>
+      </div>  
+
+      
       <footer class="footer">
-        <p>© 2016 Company, Inc.</p>
+        <p>
+          Aún no tienes cuenta?
+          <a href="registro.html">Registrate</a>
+        </p>
       </footer>
-      -->
+      
 
     </div> <!-- /container -->
     
