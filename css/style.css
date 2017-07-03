@@ -18,12 +18,31 @@ body.private.landing{
   background: #e53935;
 }
 
+h1{
+  color:#e53935;
+  font-size: 28px;
+  margin-top:15px;
+}
+
+a{
+  color:#e53935;
+}
+
 .container{
   max-width: 767px;
 }
 
 .clear{
   clear: both;
+}
+
+.starrr span{
+  color:#666;
+  font-size: 18px;
+}
+
+.starrr span.glyphicon-star-empty{
+  color:#999;
 }
 
 /* Custom page header */
@@ -50,6 +69,14 @@ body.private.landing{
   margin-left:52px;
 }
 
+.navbar ul{
+  margin:0 -15px;
+}
+
+.navbar ul li{
+  border-bottom:1px solid #be120e;
+}
+
 .navbar p{
   margin:15px 0 0 60px;
   float: none;
@@ -60,6 +87,7 @@ body.private.landing{
 .navbar a{
   color:#FFF;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .private .navbar.interno{
@@ -206,11 +234,17 @@ body.private.landing{
   text-transform: uppercase;
 }
 
-.form-signin .form-control::-webkit-input-placeholder, 
-.form-signin .form-control::-moz-placeholder,
-.form-signin .form-control:-ms-input-placeholder,
+.form-signin .form-control::-webkit-input-placeholder {
+  color:#efefef!important;
+}
+.form-signin .form-control::-moz-placeholder {
+  color:#efefef!important;
+}
+.form-signin .form-control:-ms-input-placeholder {
+  color:#efefef!important;
+}
 .form-signin .form-control:-moz-placeholder {
-  color:#FFF!important;
+  color:#efefef!important;
 }
 
 .contentTipo{
@@ -359,8 +393,13 @@ body.private.landing{
 
 
 /****************************************/
-.contentClase h1{
-  color:#e53935;
+.breadcrumb{
+  padding:15px 0;
+  margin:0;
+}
+
+.contentClase{
+
 }
 .contentClase iframe{
   width:100%;
