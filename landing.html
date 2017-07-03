@@ -18,14 +18,13 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="css/ie-emulation-modes-warning.js.descarga"></script>
 
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,43 +33,55 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="private landing">
 
-    <div class="header clearfix">
-      <img src="img/logo.png" alt="Logo Metro" width="50">
-    </div>
+    <nav class="navbar navbar-default interno navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/logo.png" width="32">
+          </a>
+          <a class="btn pull-right alertBell">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
 
-    <div class="container">      
+    <div class="container">
+
       <div class="row">
-
-        <div class="boxButtons">
-          <div class="col-xs-6">
-            <a class="btn btn-lg btn-primary" href="ingreso.html" role="button">
-              Ingreso
-            </a>
-          </div>
-          <div class="col-xs-6">
-            <a class="btn btn-lg btn-success " href="registro.html" role="button">
-              Registro
-            </a>
-          </div>
-          <div class="clear"></div>
-        </div>
-
-        <div class="boxSocial">
+        <div class="menu">
           <div class="col-xs-12">
-            <a class="btn btn-block btn-social btn-facebook" href="landing.html">
-              <span class="fa fa-facebook"></span> Ingresa con Facebook
+            <a class="btn btn-lg btn-primary" href="mapa.html" role="button">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Mi ubicacion
             </a>
           </div>
+          <div class="col-xs-6">
+            <a class="btn btn-lg btn-success" href="juegos.html" role="button">
+              <i class="fa fa-gamepad" aria-hidden="true"></i> Juegos
+            </a>
+          </div>
+          <div class="col-xs-6">
+            <a class="btn btn-lg btn-primary red" href="cursos.html" role="button">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i> Cursos
+            </a>
+          </div>
+
           <div class="col-xs-12">
-            <a class="btn btn-block btn-social btn-google" href="landing.html">
-              <span class="fa fa-google"></span> Ingresa con Google
+            <a class="btn btn-lg btn-primary" href="" role="button">
+              <i class="fa fa-wifi" aria-hidden="true"></i> Red wifi
             </a>
           </div>
         </div>
+      </div>
 
-      </div>  
+      <!--
+      <footer class="footer">
+        <p>© 2016 Company, Inc.</p>
+      </footer>
+      -->
+
     </div> <!-- /container -->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
