@@ -1,2 +1,6 @@
-<gap:plugin name="org.apache.cordova.inappbrowser"      version="0.3.3" />
-<preference name=”stay-in-webview” value=”false” />
+<gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3"/>
+<preference name="stay-in-webview” value=”false"/>
+
+
+
+
