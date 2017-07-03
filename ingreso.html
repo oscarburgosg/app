@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/jumbotron-narrow/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,41 +40,53 @@
 
   <body>
 
-    <div class="header clearfix">
-      <img src="img/logo.png" alt="Logo Metro" width="50">
-    </div>
+      <div class="header clearfix">
+        <img src="img/logo.png" alt="Logo Metro" width="50">
+      </div>
 
-    <div class="container">      
+      <div class="clear"></div>
+
+    <div class="container ingreso">
+    
       <div class="row">
 
-        <div class="boxButtons">
-          <div class="col-xs-6">
-            <a class="btn btn-lg btn-primary" href="ingreso.html" role="button">
-              Ingreso
-            </a>
+        <form class="form-signin">
+          <div class="input">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required="" autofocus="">
           </div>
-          <div class="col-xs-6">
-            <a class="btn btn-lg btn-success " href="registro.html" role="button">
-              Registro
-            </a>
+          <div class="input">
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
           </div>
-          <div class="clear"></div>
-        </div>
-
-        <div class="boxSocial">
-          <div class="col-xs-12">
-            <a class="btn btn-block btn-social btn-facebook" href="landing.html">
-              <span class="fa fa-facebook"></span> Ingresa con Facebook
-            </a>
-          </div>
-          <div class="col-xs-12">
-            <a class="btn btn-block btn-social btn-google" href="landing.html">
-              <span class="fa fa-google"></span> Ingresa con Google
-            </a>
-          </div>
-        </div>
-
+          <a class="btn btn-lg btn-primary btn-block" type="submit" href="landing.html">Ingresar</a>
+        </form>
       </div>  
+
+      <div class="row">
+        <div class="boxSocial">
+          <div class="col-xs-6">
+            <a href="landing.html" class="btn btn-block btn-social btn-facebook">
+              <span class="fa fa-facebook pull-right"></span>
+            </a>
+          </div>
+          <div href="landing.html" class="col-xs-6">
+            <a class="btn btn-block btn-social btn-google">
+              <span class="fa fa-google"></span>
+            </a>
+          </div>
+        </div>
+      </div>  
+
+      
+      <footer class="footer">
+        <p>
+          Aún no tienes cuenta?
+          <a href="registro.html">Registrate</a>
+        </p>
+      </footer>
+      
+
     </div> <!-- /container -->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
