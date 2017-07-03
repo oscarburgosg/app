@@ -2,7 +2,6 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
   background: #e53935;
   font-family: 'Lato', sans-serif;
@@ -12,7 +11,6 @@ body.private{
   padding:0;
   background: #efefef;
   color:#333;
-
   margin-top: 55px;
 }
 
@@ -29,14 +27,49 @@ body.private.landing{
 }
 
 /* Custom page header */
-.private .navbar.interno{
+.navbar{
   background: none;
+  border-bottom: 1px solid #FFF;
+  text-align: center;
+  color:#FFF;
+}
+
+.navbar .navbar-brand{
+  margin:0 0 0 60px;
+  float: none;
+  display: inline-block;
+  width: auto;
+}
+
+.private .navbar .navbar-brand{
+  margin-left:5px;
+}
+
+.private.landing .navbar .navbar-brand{
+  margin-left:52px;
+}
+
+.navbar p{
+  margin:15px 0 0 60px;
+  float: none;
+  display: inline-block;
+  width: auto;
+}
+
+.navbar a{
+  color:#FFF;
+  font-weight: 700;
+}
+
+.private .navbar.interno{
   border-width: 0 0 1px;
   background: #e53935;
 }
 
-.navbar.interno .btn{
+.navbar .btn{
   padding: 15px;
+  background: none;
+  color:#FFF;
 }
 
 .navbar.interno .navbar-toggle{
@@ -55,6 +88,7 @@ body.private.landing{
 
 .navbar.interno .navbar-collapse ul li a{
   color:#FFF;
+  text-align: left;
 }
 
 .header {
@@ -333,7 +367,7 @@ body.private.landing{
 
 .contentscroll{
   overflow: auto;
-  height:500px;
+  height:400px;
 }
 
 .contentscroll img{
