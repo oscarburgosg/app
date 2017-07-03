@@ -29,6 +29,7 @@ body.private.landing{
 /* Custom page header */
 .navbar{
   background: none;
+  border:0;
   border-bottom: 1px solid #FFF;
   text-align: center;
   color:#FFF;
