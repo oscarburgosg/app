@@ -38,6 +38,8 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js.descarga"></script>
+
+    <script type="text/javascript" src="js/videoPlayer.js"></script>
   </head>
 
   <body class="private">
@@ -72,12 +74,18 @@
           <div class="contentClase">
             <h1>Clase Numero Tres</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique recusandae beatae illo, quia non libero aperiam consequatur nostrum ut itaque corrupti totam ducimus at natus doloribus inventore iusto quo.</p>
-            <video controls autoplay preload="auto" poster="video/big-buck-bunny_poster.jpg" width="100%">
-                <source src="video/big_buck_bunny.mp4" type="video/mp4" />
-                <source src="video/big_buck_bunny.webm" type="video/webm" />
-                <source src="video/big_buck_bunny.ogv" type="video/ogg" />
-            </video>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GHWcJg0gZqI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+            <script>
+              function video(){
+                     VideoPlayer.play("http://path.to.my/video.mp4");    /*si es un archivo en internet*/ 
+                     VideoPlayer.play("file:///path/to/my/video.mp4");    /*si es un archivo en tu memoria*/ 
+                     VideoPlayer.play("file:///android_asset/www/path/to/my/video.mp4");     /*si es un archivo dentro de tu app*/ 
+                     VideoPlayer.play("https://www.youtube.com/watch?v=en_sVVjWFKk");    /*si es un video de youtube*/ 
+               }
+            </script>
+            <frame src="javascript:video()" name="principal" id="principal">
+
+            
           </div>
         </div>
       </div>

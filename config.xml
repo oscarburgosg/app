@@ -1,14 +1,1 @@
-<widget id="com.example.hello" version="0.0.1">
-    <name>HelloWorld</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@callback.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-</widget>
-
-<gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
-<preference name="stay-in-webview" value="false" />
+<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
