@@ -129,7 +129,7 @@ body.registro .navbar p{
 }
 
 .header {
-  margin:20px 0 40px;
+  margin:20px 0;
   text-align: center;
 }
 
@@ -421,6 +421,16 @@ body.registro .navbar p{
 
 .contentscroll img{
   height:100%;
+}
+
+.contentBanner{
+  border-top: #efefef solid 1px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+
 }
 
 /* Customize container */
