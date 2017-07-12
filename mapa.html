@@ -38,6 +38,8 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js.descarga"></script>
+
+    <script src="js/magnifik.js"></script>
   </head>
 
   <body class="private">
@@ -86,8 +88,51 @@
         <div class="col-xs-12">
           <div class="contentPlano">
             <h1>Mi ubicación</h1>
+            <!--
             <div class="contentscroll">
               <img src="img/planored.png" alt="" width="500">
+            </div>
+            -->
+            <div class="contentscroll">
+            <div class="magnifik-example basic">
+              <h2>Basic magnifik</h2>
+              <a class="z1" href="img/planored.png">
+                  <img src="img/planored.png">
+              </a>
+              <script>
+                (function($) {
+
+                    // initialize magnifik
+                    $('a.z1').magnifik();
+
+
+                    // Manual tests : verify event names in README are indeed correct
+                    var $element = $('a.z1');
+                    var openingEvent = 'magnifik:opening';
+                    var openedEvent = 'magnifik:open';
+                    var closingEvent = 'magnifik:closing';
+                    var closedEvent = 'magnifik:close';
+
+                    $element.on(openingEvent, function(event) {
+                        console.log(openingEvent + ' event has been fired');
+                    });
+
+                    $element.on(openedEvent, function(event) {
+                        console.log(openedEvent + ' event has been fired');
+                    });
+
+                    $element.on(closingEvent, function(event) {
+                        console.log(closingEvent + ' event has been fired');
+                    });
+
+                    $element.on(closedEvent, function(event) {
+                        console.log(closedEvent + ' event has been fired');
+                    });
+
+                }(jQuery));
+                
+              </script>
+            </div>
             </div>
           </div>
         </div>

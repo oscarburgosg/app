@@ -351,6 +351,10 @@ body.registro .navbar p{
   width:100%;
 }
 
+.menu .big .btn{
+  padding:55px 15px;
+}
+
 .btn{
   background: #ffdad9;
   border-radius: 0;
@@ -425,11 +429,10 @@ body.registro .navbar p{
 
 .contentBanner{
   border-top: #efefef solid 1px;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 0;
-  height: 120px;
+  margin: 25px auto 0;
+  float:left;
   width: 100%;
+  padding:15px 0 0;
 
 }
 
