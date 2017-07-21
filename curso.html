@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/jumbotron-narrow/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,34 +38,23 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="js/starsvaloration.js"></script>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js.descarga"></script>
+
+    <script type="text/javascript" src="js/videoPlayer.js"></script>
   </head>
 
   <body class="private">
-    
-    <!--
-    <nav class="navbar navbar-default interno">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="img/logo.png" width="32">
-          </a>
-          <a href="landing.html" class="btn pull-right">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-    -->
 
     <nav class="navbar navbar-default interno custom-navbar navbar-fixed-top" role="navigation">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
           <a class="navbar-brand" href="landing.html">
-            <img alt="Brand" src="img/logo.png" width="32">
+            <img alt="Brand" src="img/logo.png" width="32"> 
           </a>
           <a href="index.html" class="btn pull-right">
             <i class="fa fa-times-circle" aria-hidden="true"></i>
@@ -114,44 +105,20 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <div class="contentPlano">
-            <h1>Mi ubicación</h1>
-            <div class="contentscroll">
-              <img src="img/planored.png" alt="" width="1080" height="824">
-            </div>
-          </div>
-        </div>
-        <div class="contentAcciones no-padding">
-          <div class="col-xs-4">
-            <a href="" class="btn">
-            <i class="fa fa-map-o" aria-hidden="true"></i>
-            <div>Planifica</div>
-            </a>
-          </div>
-          <div class="col-xs-4">
-            <a href="" class="btn selected">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <div>Ubicación</div>
-            </a>
-          </div>
-          <div class="col-xs-4">
-            <a href="" class="btn">
-            <i class="fa fa-bookmark" aria-hidden="true"></i>
-            <div>Guia</div>
-            </a>
+          <div class="contentClase">
+           <ol class="breadcrumb">
+              <li><a href="cursos.html">Cursos</a></li>
+              <li class="active">01 - Presentación</li>
+            </ol>
+            <h1>Presentación</h1>
+            <div id="stars-existing" class="starrr" data-rating='4'></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique recusandae beatae illo, quia non libero aperiam consequatur nostrum ut itaque corrupti totam ducimus at natus doloribus inventore iusto quo.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T2DSAFnPhN0?showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
-      <!--
-      <footer class="footer">
-        <p>© 2016 Company, Inc.</p>
-      </footer>
-      -->
-
     </div> <!-- /container -->
-    
-    
   
-
-</body></html>
+</body>
+</html>

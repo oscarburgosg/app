@@ -8,6 +8,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -38,66 +39,75 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="ingreso">
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <p>
-            Aún no tienes cuenta?
-            <a href="registro.html">Registrate</a>
-          </p>
-          <a class="btn pull-right alertBell">
-            <i class="fa fa-bell" aria-hidden="true"></i>
-          </a>
+    <div class="boxPublicidad">
+      <img src="img/tiro.jpg" alt="Logo Metro" id="bg">
+    </div>
+    
+    <div class="boxContent">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <p>
+              Aún no tienes cuenta?
+              <a href="registro.html">Registrate</a>
+            </p>
+            <a class="btn pull-right alertBell">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <div class="header clearfix">
-      <img src="img/logo.png" alt="Logo Metro" width="50">
+      <div class="header clearfix">
+        <img src="img/logo.png" alt="Logo Metro" width="50">
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="container ingreso">
+      
+        <div class="row">
+
+          <form class="form-signin">
+            <div class="input">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required="" autofocus="">
+            </div>
+            <div class="input">
+              <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+            </div>
+            <a class="btn btn-lg btn-primary btn-block" type="submit" href="landing.html">Ingresar</a>
+          </form>
+        </div>  
+
+        <div class="row">
+          <div class="boxSocial">
+            <div class="col-xs-6">
+              <a href="landing.html" class="btn btn-block btn-social btn-facebook">
+                <span class="fa fa-facebook pull-right"></span>
+              </a>
+            </div>
+            <div href="landing.html" class="col-xs-6">
+              <a class="btn btn-block btn-social btn-google">
+                <span class="fa fa-google"></span>
+              </a>
+            </div>
+          </div>
+        </div>  
+        <!--
+        <div class="row">
+          <div class="contentBanner">
+            <img src="img/unimarc.jpg" alt="" width="100%">
+          </div>
+        </div>
+        -->
+      </div> <!-- /container -->
     </div>
 
-    <div class="clear"></div>
 
-    <div class="container ingreso">
-    
-      <div class="row">
-
-        <form class="form-signin">
-          <div class="input">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required="" autofocus="">
-          </div>
-          <div class="input">
-            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
-          </div>
-          <a class="btn btn-lg btn-primary btn-block" type="submit" href="landing.html">Ingresar</a>
-        </form>
-      </div>  
-
-      <div class="row">
-        <div class="boxSocial">
-          <div class="col-xs-6">
-            <a href="landing.html" class="btn btn-block btn-social btn-facebook">
-              <span class="fa fa-facebook pull-right"></span>
-            </a>
-          </div>
-          <div href="landing.html" class="col-xs-6">
-            <a class="btn btn-block btn-social btn-google">
-              <span class="fa fa-google"></span>
-            </a>
-          </div>
-        </div>
-      </div>  
-
-      <div class="row">
-        <div class="contentBanner">
-          <img src="img/unimarc.jpg" alt="" width="100%">
-        </div>
-      </div>
-    </div> <!-- /container -->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -106,6 +116,32 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js.descarga"></script>
+
+    <script> 
+      $(window).load(function() {    
+
+      var theWindow        = $(window),
+          $bg              = $("#bg"),
+          aspectRatio      = $bg.width() / $bg.height();
+                        
+      function resizeBg() {
+        
+        if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+            $bg
+              .removeClass()
+              .addClass('bgheight');
+        } else {
+            $bg
+              .removeClass()
+              .addClass('bgwidth');
+        }
+              
+      }
+                              
+      theWindow.resize(resizeBg).trigger("resize");
+
+    });
+    </script>
   
 
 </body></html>
