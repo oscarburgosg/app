@@ -359,11 +359,11 @@ body.ingreso .btn {
 
 .menu.emergencias {
   width: 60%;
-  margin: 0 auto; }
+  margin: 15px auto 0; }
   .menu.emergencias div[class*="col-xs"] {
     text-align: center; }
   .menu.emergencias .btn {
-    margin: 15px 0 15px;
+    margin: 0 0 10px;
     width: 100px;
     height: 100px;
     border-radius: 5px;
