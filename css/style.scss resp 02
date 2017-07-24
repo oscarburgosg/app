@@ -14,7 +14,9 @@ body.private{
   color:#333;
   margin-top: 55px;
 
-  
+  .boxButtons{
+    margin:0;
+  }
 }
 
 body.private.landing{
@@ -55,10 +57,6 @@ body.ecommerce{
   }
 }
 
-.bootstrap-select{
-  z-index: 2000;
-}
-
 .sep {
   max-width: 80px;
   border: 2px solid #FFF;
@@ -97,10 +95,8 @@ a{
 .starrr{
 
   span{
-    color: #666;
+    color:#666;
     font-size: 18px;
-    margin: 0 5px 0 0;
-    display: inline-block;
   }
 
   span.glyphicon-star-empty{
@@ -174,35 +170,17 @@ a{
   border-bottom: 1px solid #FFF;
   text-align: center;
   color:#FFF; 
-  z-index: 3000;
 
-  span{
-    float: left;
-    display: inline-block;
-    padding: 15px 0;
-
-  }
-  
   .navbar-brand{
     display: inline-block;
     width: auto;
   }
 
-  .navbar-collapse{
-    max-height: 100%;
-    
-    ul{
-      margin:0 -15px;
+  ul{
+    margin:0 -15px;
 
-      li{
-        border-bottom:1px solid #be120e;
-        width: 100%;
-
-        .navbar-brand{
-          width:100%;
-          margin:0;
-        }
-      }
+    li{
+      border-bottom:1px solid #be120e;
     }
   }
 
@@ -300,17 +278,6 @@ a{
   }
 }
 
-.boxButtons.fijo{
-  position: absolute;
-  bottom:0;
-  left:0;
-  margin:0;
-
-  .btn{
-    margin:5px 0 0;
-  }
-}
-
 .boxSocial{
   float:left;
   width:100%;
@@ -374,6 +341,9 @@ a{
 /*PAGES*/
 body.ingreso{
   
+
+  border:red dashed 5px;
+  
   .navbar{
     background-color: rgba(255, 0, 0, 0.3);
   }
@@ -389,6 +359,8 @@ body.ingreso{
   .btn{
     background-color: rgba(255, 0, 0, 0.3);
     color:#FFF;
+
+    border:red dashed 5px;
   }
 }
 
@@ -586,16 +558,6 @@ body.ingreso{
       color: #fff;
       background-color: #e53935;
       border-color: #e53935;
-
-      .badge{
-        color:#333;
-      }
-  }
-
-  .badge{
-    float: none;
-    margin: -4px 0 0 10px;
-    font-size: 17px;
   }
 }
 
@@ -609,7 +571,7 @@ body.ingreso{
   li{
     font-size: 14px;
     font-weight: 300;
-    padding: 10px ;
+    padding: 15px ;
 
     a{
       font-size: 14px;
@@ -630,71 +592,20 @@ body.ingreso{
   top:150%;
 }
 
-.private.cursos{
-
-  .container{
-    padding:15px 15px 70px;
-  }
-
-  .boxButtons{
-    position: fixed;
-    bottom:0;
-    left:0;
-    margin:0;
-    z-index: 1000;
-
-    .btn{
-      margin:0;
-    }
-  }
-}
-
-.contentJuegos{
-  margin:10px 0 0;
-}
-
-.contentPlano{
-  margin:10px 0 0;
-
-  .contentscroll{
-    overflow: auto;
-    height:390px;
-
-    img{
-    }
-  }
-}
-
-.private.ecommerce{
-  
-  .boxButtons{
-    position: fixed;
-    bottom:0;
-    left:0;
-    margin:0;
-    z-index: 1000;
-
-    .btn{
-      margin:0;
-    }
-  }
-}
-
-.contentCompras{
-  margin:10px 0 0;
-}
-
 .contentClase{
-
-  .panel{
-    margin:0 0 5px;
-  }
 
   iframe{
     width:100%;
   }
 }
 
+.contentscroll{
+  overflow: auto;
+  height:390px;
+
+  img{
+  }
+}
 
 .contentBanner{
   border-top: #efefef solid 1px;
@@ -728,21 +639,6 @@ body.ingreso{
   }
 }
 
-.contentVideo{
-  z-index: 5000;
-  background:#333;
-  position: absolute;
-  top:0;
-  left: 0;
-  width:100%;
-  height:100%;
-
-  iframe{
-    width:100%;
-    height:100%;
-  }
-}
-
 /* Customize container */
 @media (min-width: 768px) {
 
@@ -753,22 +649,4 @@ body.ingreso{
 
 .container-narrow > hr {
   margin: 30px 0;
-}
-
-
-.controls{
-  ul{
-    list-style: none;
-
-    li{
-      display: inline-block;
-
-      a{
-        color:#FFF;
-        margin:5px;
-        cursor: pointer;
-        font-size: 24px;
-      }
-    }
-  }
 }

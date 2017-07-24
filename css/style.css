@@ -11,8 +11,6 @@ body.private {
   background: #f1f1f1;
   color: #333;
   margin-top: 55px; }
-  body.private .boxButtons {
-    margin: 0; }
 
 body.private.landing {
   background: #e53935; }
@@ -30,6 +28,9 @@ body.ecommerce .container .btn-group {
   body.ecommerce .container .btn-group .btn {
     width: 100%;
     padding: 15px; }
+
+.bootstrap-select {
+  z-index: 2000; }
 
 .sep {
   max-width: 80px;
@@ -62,7 +63,9 @@ a {
 /*Valoracion*/
 .starrr span {
   color: #666;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0 5px 0 0;
+  display: inline-block; }
 .starrr span.glyphicon-star-empty {
   color: #999; }
 
@@ -124,14 +127,25 @@ a {
   border: 0;
   border-bottom: 1px solid #FFF;
   text-align: center;
-  color: #FFF; }
+  color: #FFF;
+  z-index: 3000; }
+  .navbar span {
+    float: left;
+    display: inline-block;
+    padding: 15px 0; }
   .navbar .navbar-brand {
     display: inline-block;
     width: auto; }
-  .navbar ul {
-    margin: 0 -15px; }
-    .navbar ul li {
-      border-bottom: 1px solid #be120e; }
+  .navbar .navbar-collapse {
+    max-height: 100%; }
+    .navbar .navbar-collapse ul {
+      margin: 0 -15px; }
+      .navbar .navbar-collapse ul li {
+        border-bottom: 1px solid #be120e;
+        width: 100%; }
+        .navbar .navbar-collapse ul li .navbar-brand {
+          width: 100%;
+          margin: 0; }
   .navbar p {
     margin: 15px 0 0 60px;
     float: none;
@@ -188,6 +202,14 @@ a {
     width: 100%;
     margin: 0 0 5px; }
 
+.boxButtons.fijo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0; }
+  .boxButtons.fijo .btn {
+    margin: 5px 0 0; }
+
 .boxSocial {
   float: left;
   width: 100%; }
@@ -231,7 +253,8 @@ body.ingreso .header {
 body.ingreso .input {
   background-color: rgba(255, 0, 0, 0.3); }
 body.ingreso .btn {
-  background-color: rgba(255, 0, 0, 0.3); }
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #FFF; }
 
 .boxPublicidad {
   position: fixed;
@@ -377,6 +400,14 @@ body.ingreso .btn {
   color: #fff;
   background-color: #e53935;
   border-color: #e53935; }
+  .list-group .list-group-item.active .badge,
+  .list-group .list-group-item.active:focus .badge,
+  .list-group .list-group-item.active:hover .badge {
+    color: #333; }
+.list-group .badge {
+  float: none;
+  margin: -4px 0 0 10px;
+  font-size: 17px; }
 
 .breadcrumb {
   margin: 5px 0;
@@ -387,7 +418,7 @@ body.ingreso .btn {
   .breadcrumb li {
     font-size: 14px;
     font-weight: 300;
-    padding: 15px; }
+    padding: 10px; }
     .breadcrumb li a {
       font-size: 14px;
       font-weight: 300; }
@@ -399,12 +430,42 @@ body.ingreso .btn {
 .dropdown-menu {
   top: 150%; }
 
+.private.cursos .container {
+  padding: 15px 15px 70px; }
+.private.cursos .boxButtons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1000; }
+  .private.cursos .boxButtons .btn {
+    margin: 0; }
+
+.contentJuegos {
+  margin: 10px 0 0; }
+
+.contentPlano {
+  margin: 10px 0 0; }
+  .contentPlano .contentscroll {
+    overflow: auto;
+    height: 390px; }
+
+.private.ecommerce .boxButtons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1000; }
+  .private.ecommerce .boxButtons .btn {
+    margin: 0; }
+
+.contentCompras {
+  margin: 10px 0 0; }
+
+.contentClase .panel {
+  margin: 0 0 5px; }
 .contentClase iframe {
   width: 100%; }
-
-.contentscroll {
-  overflow: auto;
-  height: 390px; }
 
 .contentBanner {
   border-top: #efefef solid 1px;
@@ -430,11 +491,33 @@ body.ingreso .btn {
   .contentAcciones div[class*="col-"]:last-child .btn {
     border: 0; }
 
+.contentVideo {
+  z-index: 5000;
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .contentVideo iframe {
+    width: 100%;
+    height: 100%; }
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
     max-width: 730px; } }
 .container-narrow > hr {
   margin: 30px 0; }
+
+.controls ul {
+  list-style: none; }
+  .controls ul li {
+    display: inline-block; }
+    .controls ul li a {
+      color: #FFF;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -35,12 +35,48 @@
     <script src="js/jquery.v1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js.descarga"></script>
   </head>
 
   <body>
+
+    <div id="video-placeholder" class="contentVideo"></div>
+
+    <div id="controls" class="controls">
+    <!--
+    <ul>
+        <li>
+          <a id="play"><i class="fa fa-play" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a id="pause"><i class="fa fa-pause" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a id="stop"><i class="fa fa-stop" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+    -->
+
+    <script type="text/javascript">
+
+      $(window).load(function() {
+        player.playVideo();
+
+        setTimeout(function() {
+              $("#video-placeholder").fadeOut(10);
+              player.stopVideo();
+          },22000);
+      });
+
+    </script>
+</div>
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -90,7 +126,6 @@
 
     </div> <!-- /container -->
     
-   
-  
+   <script src="js/script.js"></script>
 
 </body></html>
